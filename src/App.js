@@ -24,7 +24,7 @@ const App = ()  => {
         }
       })
     return unSubscribeAuth
-  }, [user])
+  }, [user]) 
 
   if(authState === null) return <h1>Loading.....</h1>
   if(authState === 'register') return <Register setAuthState={setAuthState} setUser={setUser}/>
@@ -35,7 +35,7 @@ const App = ()  => {
     <div className="App">
 
       <Register />
-      
+
     </div>
   );
 }
